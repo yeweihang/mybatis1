@@ -28,6 +28,7 @@ public class UserDaoImplTest {
         sqlSessionFactory = new SqlSessionFactoryBuilder().build(resourceAsStream);
     }
 
+    //根据用户id查询用户信息
     @Test
     public void findUserByIdTest() throws IOException {
         UserDao userDao = new UserDaoimpl(sqlSessionFactory);
